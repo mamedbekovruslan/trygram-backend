@@ -1,3 +1,4 @@
+// eslint.config.js
 import js from '@eslint/js';
 import globals from 'globals';
 import typescriptEslint from '@typescript-eslint/eslint-plugin';
@@ -41,7 +42,7 @@ export default [
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/explicit-function-return-type': 'error',
       '@typescript-eslint/explicit-module-boundary-types': 'warn',
-      '@typescript-eslint/no-inferrable-types': 'off',
+      '@typescript-eslint/no-inferrable-types': 'off', // Убедитесь, что это 'error'
       '@typescript-eslint/explicit-member-accessibility': [
         'warn',
         { accessibility: 'explicit' },
